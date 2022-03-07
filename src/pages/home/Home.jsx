@@ -1,5 +1,4 @@
 import { BudgetCards } from "../../components/cards/BudgetCards";
-import "./home.css";
 
 export const Home = () => {
   return (
@@ -10,18 +9,7 @@ export const Home = () => {
         <button className="addExpense">Add Expense</button>
       </div>
       <div className="Cards">
-        <BudgetCards name="Entertrainment" amount={200} max={1000} />
-        <div class="progressBar">
-          <div
-            className="progress"
-            style={{
-              width: "25%",
-              backgroundColor: "rgba(102, 16, 83, 0.698)",
-            }}
-          >
-            25%
-          </div>
-        </div>
+        <BudgetCards name="Entertainment" amount={200} max={1000} />
       </div>
     </div>
   );

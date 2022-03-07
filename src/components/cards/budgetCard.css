@@ -1,0 +1,52 @@
+*{
+    font-size: 14px;
+    margin: 0;
+}
+
+.budgetCards{
+background-color: rgb(247, 242, 242);
+    border-radius: 15px;
+    width: 360px;
+    height: 150px;
+    margin: 35px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: 'Hubballi', cursive;
+}
+
+.budget{
+    text-align: end;
+    margin:10px;
+    font-size:20px;
+    color: rgb(100, 100, 100) ;
+    font-family: 'Hubballi', cursive;
+    font-weight: 500;
+
+}
+.progressBar{
+    width:  100%;
+    background-color: rgba(197, 195, 195, 0.698);
+    border-radius: 50px;
+    margin-top: 15px ;
+    display: flex;
+}
+
+.progressLabel{
+    text-align: center;
+    color:white;
+    font-family: 'Hubballi', cursive;
+}
+.progress{
+    background-color: rgba(102, 16, 83, 0.698);
+    width: 25%;
+    border-radius: 50px;
+   }
