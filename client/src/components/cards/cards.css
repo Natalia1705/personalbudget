@@ -1,0 +1,29 @@
+.cards{
+    display: flex;
+    height: 38vh;
+    width:100%;
+    flex-wrap: wrap;
+    margin: 0;
+    justify-content:center;
+    align-items: center;
+    }
+
+.incomeCards{
+        display: flex;
+        height: 20vh;
+        width:100%;
+        flex-wrap: wrap;
+        margin: 0;
+        justify-content:center;
+        align-items: center;
+        }
+
+.cardTitle{
+
+    width: 100%;
+   color: rgba(156, 18, 126, 0.698); 
+    font-size: 30px;
+    margin-top: 8px;
+    text-align:center;
+    font-family: 'Hubballi', cursive;
+        }
