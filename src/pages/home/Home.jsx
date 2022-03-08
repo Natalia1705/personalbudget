@@ -9,7 +9,7 @@ export const Home = () => {
         <button className="addExpense">Add Expense</button>
       </div>
       <div className="Cards">
-        <BudgetCards name="Entertainment" amount={200} max={1000} />
+        <BudgetCards name="Entertainment" amount={90} max={100} />
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
 
 export const BudgetCards = ({ name, amount, max }) => {
   return (
-    <div className="budgetCards">
+    <div className={amount >= max ? "budgetCardsDanger" : "budgetCards"}>
       <div className="title">
         {name}
         <SportsEsportsIcon style={{ marginLeft: "15px", fontSize: "45px" }} />
@@ -14,9 +14,12 @@ export const BudgetCards = ({ name, amount, max }) => {
       </div>
 
       <div class="progressBar">
-        <div className="progress">
-          <div className="progressLabel">25%</div>
-        </div>
+        <progress min={0} max={max / max} value={amount / max} />
+        <p className="progressLabel">{`${(amount / max) * 100}%`}</p>
+      </div>
+      <div className="buttons">
+        <button>Add Budget</button>
+        <button>Add Expensive</button>
       </div>
     </div>
   );
